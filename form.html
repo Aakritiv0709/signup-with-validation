@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign Up Form | Kritan Pvt Ltd</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- JS -->
+    <script src="/validation.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="form_title">Registration</div>
+      <div class="main_content">
+        <form action="#">
+          <div class="user_personal_details">
+            <div class="input_field">
+              <span class="user_details">Full Name</span>
+              <input type="text" id="full_name" placeholder="Enter your name" />
+            </div>
+            <div class="input_field">
+              <span class="user_details">Username</span>
+              <input
+                type="text"
+                id="user_name"
+                placeholder="Enter your Username"
+              />
+            </div>
+            <div class="input_field">
+              <span class="user_details">Email</span>
+              <input type="email" id="email" placeholder="Enter your Email" />
+            </div>
+            <div class="input_field">
+              <span class="user_details">Phone Number</span>
+              <input
+                type="number"
+                id="phone_number"
+                placeholder="Enter your number"
+              />
+            </div>
+            <div class="input_field">
+              <span class="user_details">Password</span>
+              <input
+                type="password"
+                id="password"
+                placeholder="Enter your Password"
+              />
+            </div>
+            <div class="input_field">
+              <span class="user_details">Confirm Password</span>
+              <input
+                type="password"
+                id="confirm_password"
+                placeholder="Enter your password"
+              />
+            </div>
+          </div>
+          <div class="gender_information">
+            <input type="radio" name="gender" value="male" id="option-1" />
+            <input type="radio" name="gender" value="female" id="option-2" />
+            <input
+              type="radio"
+              name="gender"
+              value="prefer_not_to_say"
+              id="option-3"
+            />
+            <span class="gender_title">Gender</span>
+            <div class="category">
+              <label for="option-1">
+                <span class="option one"> </span>
+                <span class="gender">Male</span>
+              </label>
+              <label for="option-2">
+                <span class="option two"> </span>
+                <span class="gender">Female</span>
+              </label>
+              <label for="option-3">
+                <span class="option three"> </span>
+                <span class="gender">Prefer not to say</span>
+              </label>
+            </div>
+          </div>
+          <div class="button">
+            <input
+              type="submit"
+              class="register_btn"
+              onclick="validateForm()"
+              value="Register"
+            />
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
